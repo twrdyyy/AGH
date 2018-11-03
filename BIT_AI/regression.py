@@ -98,8 +98,8 @@ if __name__ == "__main__":
     noise = np.random.normal(size=X_hard.shape)
     Y_hard = 10 * np.sin(X_hard) + 5 * X_hard - 10 + 3 * noise
 
-    #X = np.array([1, 2, 3, 4, 5, 6, 7])
-    #Y = np.array([4.1, 6.7, 10.8, 14.3, 15.5, 20.0, 21.37])
+    X = np.array([1, 2, 3, 4, 5, 6, 7])
+    Y = np.array([4.1, 6.7, 10.8, 14.3, 15.5, 20.0, 21.37])
 
     X = X_hard
     Y = Y_hard
@@ -107,7 +107,7 @@ if __name__ == "__main__":
     init_w_0 = np.random.rand()
     init_w_1 = np.random.rand()
     learning_rate = 0.01
-    num_iterations = 100
+    num_iterations = 10
 
     trained_w_0, trained_w_1, loss_history = train_model(init_w_0, init_w_1, X, Y, learning_rate, num_iterations)
 
