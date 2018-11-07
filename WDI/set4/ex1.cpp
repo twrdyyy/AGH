@@ -1,7 +1,7 @@
 #include <iostream>   
 using namespace std;
 
-const int MAX = 20;
+const int MAX = 5;
 
 void spiral(int t[MAX][MAX]){
 	
@@ -35,7 +35,7 @@ void spiral(int t[MAX][MAX]){
 	
 	for(int i = 0; i < MAX; i++){
 		for(int j = 0; j < MAX; j++){
-			cout.width(4);
+			cout.width(2);
 			cout<<t[i][j]<<" ";
 		}
 		cout<<endl;
